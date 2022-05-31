@@ -107,7 +107,7 @@
               <li class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle animated fadeIn animation-delay-8" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="aide">Aide <i class="zmdi zmdi-chevron-down"></i></a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="mailto:fichesetcartes@paulhenry.eu"><i class="zmdi zmdi-email"></i> Me contacter</a></li>
+                  <li><a class="dropdown-item" href="#" data-toggle="modal" data-target="#myModal"><i class="zmdi zmdi-email"></i>Me contacter</a></li>
                   <li><a class="dropdown-item" href="faq.html"><i class="zmdi zmdi-help"></i>FAQ</a></li>
                 </ul>
               </li>
@@ -212,13 +212,31 @@
               <i class="zmdi zmdi-help"></i>Autres</a>
             <ul id="sc5" class="card-collapse collapse" role="tabpanel" aria-labelledby="sch5" data-parent="#slidebar-menu">
               <li><a href="faq.html">FAQ</a></li>
-              <li><a href="mailto:fichesetcartes@paulhenry.eu">Contact</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#myModal">Me contacter</a></li>
               <li><a href="about.html">Qui sommes-nous ?</a></li>
             </ul>
           </li>
         </ul>
       </div>
     </div>
+    <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog animated zoomIn animated-3x" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title color-primary" id="myModalLabel">Contact</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="zmdi zmdi-close"></i></span></button>
+            </div>
+            <div class="modal-body">
+                Toutes les demandes d'aide concernant les devoirs seront ignorées.
+                Ceci étant dit, vous pouvez me contacter par email (je préfère) ou par Instagram.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                <button type="button" class="btn  btn-success"><a href="mailto:fichesetcartes@paulhenry.eu">Email</a></button>
+                <button type="button" class="btn  btn-success"><a href="#">Instagram</a></button>
+            </div>
+        </div>
+    </div>    
     <script src="assets/js/plugins.min.js"></script>
     <script src="assets/js/app.min.js"></script>
     <script src="assets/js/configurator.min.js"></script>
