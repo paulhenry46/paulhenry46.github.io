@@ -18,6 +18,15 @@
         <script src="assets/js/html5shiv.min.js"></script>
         <script src="assets/js/respond.min.js"></script>
     <![endif]-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZV3QXVF7FM"></script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZV3QXVF7FM');
+    </script>
   </head>
   <body>
    <!-- Il y avait ici les paramètres de couleur avec le bouton : c'est supprimé---> 
@@ -106,7 +115,8 @@
                 <a href="#" class="nav-link dropdown-toggle animated fadeIn animation-delay-8" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="autres">Autres <i class="zmdi zmdi-chevron-down"></i></a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="https://github.com/paulhenry46/Fiches_cartes_mentales"><i class="zmdi zmdi-download"></i> Télécharger les sources</a></li>
-                  <li><a class="dropdown-item" href="about.html"><i class="zmdi zmdi-view-compact"></i> Qui sommes-nous ?</a></li>
+                  <li><a class="dropdown-item" href="about.html"><i class="zmdi zmdi-account"></i> Qui sommes-nous ?</a></li>
+                  <li><a class="dropdown-item" href="archives2nd/index.html"><i class="zmdi zmdi-folder"></i>Archives 2nd</a></li>
                 </ul>
               </li>
             </ul>
@@ -150,7 +160,7 @@
           </div>
         </div>
       </div> <!-- container -->
- <footer class="ms-footer">
+      <footer class="ms-footer">
         <div class="container">
           <p>Made with ❤️ by Paulhenry.</p>
         </div>
@@ -159,7 +169,7 @@
         <a href="#" data-scroll id="back-top" class="btn-circle btn-circle-primary btn-circle-sm btn-circle-raised "><i class="zmdi zmdi-long-arrow-up"></i></a>
       </div>
     </div> <!-- ms-site-container -->
-    <div class="ms-slidebar sb-slidebar sb-left sb-style-overlay" id="ms-slidebar">
+     <div class="ms-slidebar sb-slidebar sb-left sb-style-overlay" id="ms-slidebar">
       <div class="sb-slidebar-container">
         <header class="ms-slidebar-header">
           <div class="ms-slidebar-login">
@@ -199,6 +209,7 @@
               <li><a href="faq.html">FAQ</a></li>
               <li class="btn-ms-menu ms-toggle-left animation-delay-10" href="javascript:void(0)"><a data-toggle="modal" data-target="#myModal">Me contacter</a></li>
               <li><a href="about.html">Qui sommes-nous ?</a></li>
+              <li><a href="archives2nd/index.html">Archives 2nd</a></li>  
             </ul>
           </li>
         </ul>
@@ -218,12 +229,30 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
                 <button type="button" class="btn  btn-primary"><a href="mailto:fichesetcartes@paulhenry.eu">Email</a></button>
-                <button type="button" class="btn  btn-primary"><a href="#">Instagram</a></button>
+                <button type="button" class="btn  btn-primary"><a href="https://www.instagram.com/fichesetcartes/">Instagram</a></button>
             </div>
         </div>
-    </div>
+    </div>    
     <script src="assets/js/plugins.min.js"></script>
     <script src="assets/js/app.min.js"></script>
+    <script src="assets/js/configurator.min.js"></script>
+    <script>
+      (function(i, s, o, g, r, a, m)
+      {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function()
+        {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '../../../../www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-90917746-2', 'auto');
+      ga('send', 'pageview');
+    </script>
     <script src="assets/js/index.js"></script>
   </body>
 </html>
