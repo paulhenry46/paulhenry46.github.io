@@ -18,6 +18,15 @@
         <script src="assets/js/html5shiv.min.js"></script>
         <script src="assets/js/respond.min.js"></script>
     <![endif]-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZV3QXVF7FM"></script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZV3QXVF7FM');
+    </script>
   </head>
   <body>
    <!-- Il y avait ici les paramètres de couleur avec le bouton : c'est supprimé---> 
@@ -98,7 +107,7 @@
               <li class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle animated fadeIn animation-delay-8" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="aide">Aide <i class="zmdi zmdi-chevron-down"></i></a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="mailto:fichesetcartes@paulhenry.eu"><i class="zmdi zmdi-email"></i> Me contacter</a></li>
+                  <li><a class="dropdown-item" href="#" data-toggle="modal" data-target="#myModal"><i class="zmdi zmdi-email"></i>Me contacter</a></li>
                   <li><a class="dropdown-item" href="faq.html"><i class="zmdi zmdi-help"></i>FAQ</a></li>
                 </ul>
               </li>
@@ -106,7 +115,8 @@
                 <a href="#" class="nav-link dropdown-toggle animated fadeIn animation-delay-8" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="autres">Autres <i class="zmdi zmdi-chevron-down"></i></a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="https://github.com/paulhenry46/Fiches_cartes_mentales"><i class="zmdi zmdi-download"></i> Télécharger les sources</a></li>
-                  <li><a class="dropdown-item" href="about.html"><i class="zmdi zmdi-view-compact"></i> Qui sommes-nous ?</a></li>
+                  <li><a class="dropdown-item" href="about.html"><i class="zmdi zmdi-account"></i> Qui sommes-nous ?</a></li>
+                  <li><a class="dropdown-item" href="archives2nd/index.html"><i class="zmdi zmdi-folder"></i>Archives 2nd</a></li>
                 </ul>
               </li>
             </ul>
@@ -231,13 +241,32 @@
               <i class="zmdi zmdi-help"></i>Autres</a>
             <ul id="sc5" class="card-collapse collapse" role="tabpanel" aria-labelledby="sch5" data-parent="#slidebar-menu">
               <li><a href="faq.html">FAQ</a></li>
-              <li><a href="mailto:fichesetcartes@paulhenry.eu">Contact</a></li>
+              <li class="btn-ms-menu ms-toggle-left animation-delay-10" href="javascript:void(0)"><a data-toggle="modal" data-target="#myModal">Me contacter</a></li>
               <li><a href="about.html">Qui sommes-nous ?</a></li>
+              <li><a href="archives2nd/index.html">Archives 2nd</a></li>  
             </ul>
           </li>
         </ul>
       </div>
     </div>
+    <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog animated zoomIn animated-3x" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title color-primary" id="myModalLabel">Contact</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="zmdi zmdi-close"></i></span></button>
+            </div>
+            <div class="modal-body">
+                Toutes les demandes d'aide concernant les devoirs seront ignorées.
+                Ceci étant dit, vous pouvez me contacter par email (je préfère) ou par Instagram.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                <button type="button" class="btn  btn-primary"><a href="mailto:fichesetcartes@paulhenry.eu">Email</a></button>
+                <button type="button" class="btn  btn-primary"><a href="https://www.instagram.com/fichesetcartes/">Instagram</a></button>
+            </div>
+        </div>
+    </div>    
     <script src="assets/js/plugins.min.js"></script>
     <script src="assets/js/app.min.js"></script>
     <script src="assets/js/configurator.min.js"></script>
