@@ -49,7 +49,7 @@ function sampleFunction() {
   }
   if(document.getElementById('enss').checked == true){
     var matiere = "ENSS"
-    var couleurnouv = "light"
+    var couleurnouv = "pink"
     var repertoire2 = "enss/"
   }
   if(document.getElementById('hg').checked == true){
@@ -59,7 +59,7 @@ function sampleFunction() {
   }
   if(document.getElementById('an').checked == true){
     var matiere = "Anglais"
-    var couleurnouv = "warning"
+    var couleurnouv = "gray"
     var repertoire2 = "an/"
   }
   if(document.getElementById('es').checked == true){

@@ -1,3 +1,4 @@
+/*rose/pink*/
 .card.card-pink {
     border-bottom:solid 3px #ff3399;
     border-radius:3px
@@ -76,3 +77,82 @@
    .color-pink {
     color:#ff3399
    }
+   /* gris */
+.card.card-gray {
+  border-bottom:solid 3px #a3a375;
+  border-radius:3px
+ }
+ .card.card-gray .card-header,
+ .card.card-gray .card-footer {
+  background-color:#a3a375;
+  color:#f5f5f5
+ }
+ .card.card-gray-inverse {
+  background-color:#a3a375;
+  border-bottom:solid 3px #a3a375;
+  color:#fff
+ }
+ .card.card-gray-inverse a.link {
+  color:#fff
+ }
+ .card.card-gray-inverse a.link:hover,
+ .card.card-gray-inverse a.link:focus {
+  border-bottom:solid 1px #fff
+ }
+ .card.card-gray-inverse .card-header,
+ .card.card-gray-inverse .card-footer {
+  background-color:#a3a375;
+  color:#f5f5f5
+ }
+ .ms-collapse .card-gray .card-header {
+  padding:0;
+  background-color:#a3a375
+ }
+ .ms-collapse .card-gray .card-header .card-title a {
+  display:block;
+  color:#fff!important
+ }
+ .ms-collapse .card-gray .card-collapse .card-block,
+ .ms-collapse .card-gray .card-collapse .card-body {
+  border:0
+ }
+ .thumbnail-card.thumbnail-card-gray .caption {
+  background-color:#a3a375;
+  color:#fff
+ }
+ .timeline-center>[class*=col-] .left.card-gray:after {
+   border-left-color:#a3a375
+  }
+  .timeline-center>[class*=col-] .left.card-gray:before {
+   background-color:#a3a375
+  }
+  .timeline-center>[class*=col-] .left.card-gray-inverse:after {
+   border-left-color:#a3a375
+  }
+  .timeline-center>[class*=col-] .left.card-gray-inverse:before {
+   background-color:#a3a375
+  }
+  .timeline-center>[class*=col-] .right.card-gray:after {
+   border-right-color:#a3a375
+  }
+  .timeline-center>[class*=col-] .right.card-gray:before {
+   background-color:#a3a375
+  }
+  .timeline-center>[class*=col-] .right.card-gray-inverse:after {
+   border-right-color:#a3a375
+  }
+  .timeline-center>[class*=col-] .right.card-gray-inverse:before {
+   background-color:#a3a375
+  }
+  .ms-tag.ms-tag-gray {
+  background-color:#a3a375
+ }
+ .ms-tag.ms-tag-gray:hover {
+  background-color:#6b6b47
+ }
+ .color-gray {
+  color:#a3a375!important
+ }
+ .color-gray {
+  color:#a3a375
+ }
