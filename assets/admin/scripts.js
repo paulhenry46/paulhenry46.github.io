@@ -8,7 +8,7 @@ function sampleFunction() {
   var mat3 = ".png\" alt=\"\" class=\"img-fluid\">\n \t \t \t \t \t </figure>\n \t \t \t \t \t <div class=\"card-body\">\n \t \t \t \t \t \t <h2><a href=\"assets/";
   var mat4 = ".pdf\">";
   var mat5 = " : ";
-  var mat6 = "/a></h2>\n \t \t \t \t \t \t <p>";
+  var mat6 = "</a></h2>\n \t \t \t \t \t \t <p>";
   var mat7 = "</p>\n \t \t \t \t \t \t <div class=\"row\">\n \t \t \t \t \t \t \t<div class=\"col-lg-6 col-md-4\"> \n \t \t \t \t \t \t \t \t <div class=\"mt-05\">\n \t \t \t \t \t \t \t \t \t<a href=\"#\" class=\"ms-tag ms-tag-";
   var mat8 = "\">";
   var mat81 = "</a>\n \t \t \t \t \t \t \t \t </div>\n \t \t \t \t \t \t \t </div>\n \t \t \t \t \t \t \t <div class=\"col-lg-6 col-md-8\">\n \t \t \t \t \t \t \t <a href=\"assets/";
