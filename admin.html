@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script type="text/javascript" src="assets/admin/scripts.js"></script>
+  <link rel="stylesheet" href="assets/admin/admin2.css">
+  <link rel="shortcut icon" href="assets/img/favicon30f4.png?v=3">
+    <link rel="stylesheet" href="assets/css/icone91f.css?family=Material+Icons">
+      <!---<link rel="stylesheet" href="https://blog.paulhenry.eu/assets/css/plugins.min.css">--->
+    <script src="assets/js/app.min.js"></script>
+    <script src="assets/js/index.js"></script>
+    <title>Console admin</title>
+</head>
+
+<body>
+<form>
+<label for="public">Public :</label>
+<input type="radio" id="public1" name="public" value="G">Général
+<input type="radio" id="public2" name="public" value="L" checked="checked">Léo Ferré</br>
+<label for="type">Type :</label>
+<input type="radio" id="fiche" name="type" value="G">Fiche de révision
+<input type="radio" id="carte" name="type" value="L" checked="checked">Carte mentale
+<input type="radio" id="methodo" name="type" value="M">Fiche de méthodologie</br>
+<label for="matiere">Matière :</label>
+<input type="radio" id="maths" name="matiere" value="M">Maths
+<input type="radio" id="pc" name="matiere" value="PC">Physique-Chimie
+<input type="radio" id="svt" name="matiere" value="SVT">SVT
+<input type="radio" id="enss" name="matiere" value="ENSS">ENSS
+<input type="radio" id="hg" name="matiere" value="HG">Histoire-Géo
+<input type="radio" id="an" name="matiere" value="AN">Anglais
+<input type="radio" id="es" name="matiere" value="ES">Espagnol
+<input type="radio" id="fr" name="matiere" value="FR">Français
+<div class="form-group label-floating has-success">
+<label class="control-label" for="nom">Nom</label><input class="form-control" type="text" id="nom" size="15" name="nom"><br></div>
+<div class="form-group label-floating has-success">
+<label class="control-label" for="age">Description</label><input class="form-control" type="text" id="age" size="30" name="age"><br></div>
+<div class="form-group label-floating has-success">
+<label class="control-label" for="titredesfichiers">Titre des fichiers</label><input class="form-control" type="text" id="titredesfichiers" name="titredesfichiers"><br></div>
+<div class="form-group label-floating has-success">
+<label class="control-label" for="date">Date</label><input class="form-control" type="text" id="date" name="date"><br><br>
+</div>
+<input class="btn btn-raised btn-danger" type="reset" value="effacer">
+</form>
+<button onclick="sampleFunction()" class="btn btn-raised btn-success">Valider</button><br>
+Page nouveautés : <button id="bnouv" class="btn btn-raised btn-info">Copier</button> <br>
+<textarea readonly id="pagenouv" name="pagenouv" rows="16" cols="100"></textarea><br>
+Page de la matière : <button id="bmat" class="btn btn-raised btn-info">Copier</button> <br>
+<textarea readonly id="pagemat" name="pagemat" rows="16" cols="100"></textarea><br>
+
+Contrôle des variables: <textarea type="text" id="sampleText" value="vide"></textarea><br>
+
+<script>
+      async function copierTexte(texte) 
+      {
+        try 
+        {
+          await navigator.clipboard.writeText(texte);
+          alert('Le texte a correctement été copié');
+        } 
+        catch(erreur) 
+        {
+          alert('Erreur lors de la copie: ', erreur);
+        }
+      }
+      document.getElementById("bnouv").onclick = function() 
+      {
+          let texte = document.getElementById("pagenouv").value;
+          copierTexte(texte);
+      }
+      document.getElementById("bmat").onclick = function() 
+      {
+          let texte = document.getElementById("pagemat").value;
+          copierTexte(texte);
+      }
+    </script>
+    <script src="assets/js/plugins.min.js"></script>
+    <script src="assets/js/app.min.js"></script>
+    <script src="assets/js/configurator.min.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html> 
