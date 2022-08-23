@@ -2,6 +2,12 @@
 @import url("plugins.min.css");
 @import url("couleurs2.css");
 @import url("icone91f.css?family=Material+Icons");
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://blog.paulhenry.eu/assets/css/flUhRq6tzZclQEJ-Vdg-IuiaDsNZ.ttf) format('truetype');
+  }
 @charset "UTF-8";
 .withripple {
  position:relative
