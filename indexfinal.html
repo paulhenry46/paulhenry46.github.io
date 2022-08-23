@@ -11,11 +11,10 @@
     <meta name="description" content="Une site internet contenant des ressources pour réviser de la 2nd à la 1re">
     <meta name="Language" CONTENT="fr" />
     <link rel="shortcut icon" href="assets/img/favicon30f4.png?v=3">
-    <link rel="stylesheet" href="assets/css/icone91f.css?family=Material+Icons">
-    <link rel="stylesheet" href="assets/css/preload.min.css">
-    <link rel="stylesheet" href="assets/css/plugins.min.css">
-    <link rel="stylesheet" href="assets/css/style.light-blue-500.min.css">
-    <link rel="stylesheet" href="assets/css/width-boxed.min.css" id="ms-boxed" disabled="">
+    <link rel="stylesheet" href="assets/css/sombre.css" title="standard">
+    <link rel="stylesheet" href="assets/css/sombre.css">
+    <link rel="alternate stylesheet" href="assets/css/bleu.css" type="text/css" title="bleu">
+    <script type="text/javascript" src="assets/js/styleswitcher.js"></script>
 
   </head>
   <body>
@@ -219,6 +218,12 @@
               <li><a href="archives2nd/index.html">Archives 2nd</a></li>
               <li><a href="mentions-legales.html">Mentions légales</a></li>  
             </ul>
+          </li>
+          <li>
+            <a class="link" href="#" onclick="setActiveStyleSheet('standard'); return false;"><i class="mr-2 fa fa-moon-o"></i>Thème sombre</a>
+          </li>
+          <li>
+            <a class="link" href="#" onclick="setActiveStyleSheet('bleu'); return false;"><i class="mr-2 fa fa-sun-o"></i>Thème clair</a>
           </li>
         </ul>
       </div>
