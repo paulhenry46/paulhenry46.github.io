@@ -16,7 +16,8 @@ function sampleFunction() {
   var mat81 = "</a>\n \t \t \t \t \t \t \t \t </div>\n \t \t \t \t \t \t \t </div>\n \t \t \t \t \t \t \t <div class=\"col-lg-6 col-md-8\">\n \t \t \t \t \t \t \t <a href=\"assets/";
   var mat9 = ".pdf\" class=\"btn btn-primary btn-sm btn-block animate-icon\">PDF<i class=\"ml-1 no-mr zmdi zmdi-long-arrow-right\"></i></a>\n \t \t \t \t \t \t</div>\n \t \t \t \t \t</div>\n \t \t \t \t</div>\n \t \t \t \t </article>\n \t \t \t </div>\n \t \t \t <!-- Fin article-->";
   var nouv1 = "\t \t \t <!--D\u00e9but article-->\n \t \t \t <div class=\"col-lg-4 col-md-6 masonry-item wow\">\n \t \t \t \t <article class=\"card card-";
-  var nouv2 = " mb-4 \">\n \t \t \t \t \t <figure class=\"ms-thumbnail ms-thumbnail-left\">\n \t \t \t \t \t \t <img src=\"assets/";
+  var nouv2 = " mb-4 \">\n \t \t \t \t \t <figure class=\"ms-thumbnail ms-thumbnail-left\">\n \t \t \t \t \t \t <img id=\"";
+  var nouv21 = "\" src=\"assets/";
   var nouv3 = ".png\" alt=\"\" class=\"img-fluid\">\n \t \t \t \t \t </figure>\n \t \t \t \t \t <div class=\"card-body\">\n \t \t \t \t \t \t <h2><a href=\"assets/";
   var nouv4 = ".pdf\">";
   var nouv5 = " : ";
@@ -88,7 +89,7 @@ function sampleFunction() {
   }
   var final = description+nom+titredesfichiers+Public+repertoire2+matiere+date+type;
   var finalmat = mat1+couleurmat+mat2+ide+mat21+repertoire1+repertoire2+titredesfichiers+mat3+repertoire1+repertoire2+titredesfichiers+mat4+Public+mat5+nom+mat6+description+mat7+couleurmat+mat8+type+mat81+repertoire1+repertoire2+titredesfichiers+mat9
-  var finalnouv = nouv1+couleurnouv+nouv2+repertoire1+repertoire2+titredesfichiers+nouv3+repertoire1+repertoire2+titredesfichiers+nouv4+matiere+nouv5+nom+nouv6+description+nouv7+couleurnouv+nouv9+matiere+nouv10+couleurnouv+nouv11+date+nouv12+repertoire1+repertoire2+titredesfichiers+nouv13
+  var finalnouv = nouv1+couleurnouv+nouv2+ide+nouv21+repertoire1+repertoire2+titredesfichiers+nouv3+repertoire1+repertoire2+titredesfichiers+nouv4+matiere+nouv5+nom+nouv6+description+nouv7+couleurnouv+nouv9+matiere+nouv10+couleurnouv+nouv11+date+nouv12+repertoire1+repertoire2+titredesfichiers+nouv13
   document.getElementById("sampleText").value = final;
   document.getElementById("pagemat").value = finalmat;
   document.getElementById("pagenouv").value = finalnouv;
