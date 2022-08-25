@@ -88,7 +88,7 @@ function sampleFunction() {
     var couleurmat = "royal"
   }
   var final = description+nom+titredesfichiers+Public+repertoire2+matiere+date+type;
-  var finalmat = mat1+couleurmat+mat2+ide+mat21+repertoire1+repertoire2+titredesfichiers+mat3+repertoire1+repertoire2+titredesfichiers+mat4+Public+mat5+nom+mat6+description+mat7+couleurmat+mat8+type+mat81+repertoire1+repertoire2+titredesfichiers+mat9
+  var finalmat = mat1+couleurmat+mat2+ide+mat21+repertoire1+repertoire2+titredesfichiers+mat3+repertoire1+repertoire2+titredesfichiers+mat4+nom+mat6+description+mat7+couleurmat+mat8+type+mat81+repertoire1+repertoire2+titredesfichiers+mat9
   var finalnouv = nouv1+couleurnouv+nouv2+ide+nouv21+repertoire1+repertoire2+titredesfichiers+nouv3+repertoire1+repertoire2+titredesfichiers+nouv4+matiere+nouv5+nom+nouv6+description+nouv7+couleurnouv+nouv9+matiere+nouv10+couleurnouv+nouv11+date+nouv12+repertoire1+repertoire2+titredesfichiers+nouv13
   document.getElementById("sampleText").value = final;
   document.getElementById("pagemat").value = finalmat;
