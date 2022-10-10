@@ -36,7 +36,7 @@ function sampleFunction() {
         var repertoire1 = "leo/"
   }
   if(document.getElementById('maths').checked == true){
-    var matiere = "Mathématiques (EDS)"
+    var matiere = "Mathématiques"
     var couleurnouv = "danger"
     var repertoire2 = "maths/"
   }
