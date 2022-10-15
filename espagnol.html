@@ -420,7 +420,8 @@
      <!-- Fin article-->
         </div>
       </div> <!-- container -->
-       <footer class="ms-footer">
+        <!--- Début footer + menu mobile--->
+      <footer class="ms-footer">
         <div class="container">
           <p>Made with ❤️ by Paulhenry.</p>
         </div>
@@ -469,30 +470,38 @@
               <li><a href="faq.html">FAQ</a></li>
               <li class="btn-ms-menu ms-toggle-left animation-delay-10" href="javascript:void(0)"><a data-toggle="modal" data-target="#myModal">Me contacter</a></li>
               <li><a href="about.html">Qui sommes-nous ?</a></li>
-              <li><a href="archives2nd/index.html">Archives 2nd</a></li>  
+              <li><a href="archives2nd/index.html">Archives 2nd</a></li>
+              <li><a href="archives3eme/index.html">Archives Brevet</a></li>
+              <li><a href="mentions-legales.html">Mentions légales</a></li>  
             </ul>
+          </li>
+          <li>
+            <a class="link" href="#" onclick="setActiveStyleSheet('standard'); return false;"><i class="mr-2 fa fa-moon-o"></i>Thème sombre</a>
+          </li>
+          <li>
+            <a class="link" href="#" onclick="setActiveStyleSheet('bleu'); return false;"><i class="mr-2 fa fa-sun-o"></i>Thème clair</a>
           </li>
         </ul>
       </div>
     </div>
     <div class="modal modal-primary" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog animated zoomIn animated-3x" role="document">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h3 class="modal-title color-primary" id="myModalLabel">Contact</h3>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="zmdi zmdi-close"></i></span></button>
-              </div>
-              <div class="modal-body">
-                  Toutes les demandes d'aide concernant les devoirs seront ignorées.
-                  Ceci étant dit, vous pouvez me contacter par email (je préfère) ou par Instagram.
-              </div>
-              <div class="modal-footer">
-                  <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
-                  <button type="button" class="btn  btn-primary"><a href="mailto:fichesetcartes@paulhenry.eu">Email</a></button>
-                  <button type="button" class="btn  btn-primary"><a href="https://www.instagram.com/fichesetcartes/">Instagram</a></button>
-              </div>
-          </div>
-      </div>    
+    <div class="modal-dialog animated zoomIn animated-3x" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title color-primary" id="myModalLabel">Contact</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="zmdi zmdi-close"></i></span></button>
+            </div>
+            <div class="modal-body">
+                Toutes les demandes d'aide concernant les devoirs seront ignorées.
+                Ceci étant dit, vous pouvez me contacter par email (je préfère) ou par Instagram.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                <button type="button" class="btn  btn-primary"><a href="mailto:fichesetcartes@paulhenry.eu">Email</a></button>
+                <button type="button" class="btn  btn-primary"><a href="https://www.instagram.com/fichesetcartes/">Instagram</a></button>
+            </div>
+        </div>
+    </div>    
     <script src="assets/js/plugins.min.js"></script>
     <script src="assets/js/app.min.js"></script>
     <script src="assets/js/index.js"></script>
