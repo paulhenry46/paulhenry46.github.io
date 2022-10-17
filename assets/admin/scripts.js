@@ -1,4 +1,4 @@
-function sampleFunction() {
+async function sampleFunction() {
   var titredesfichiers = document.getElementById("titredesfichiers").value;
   var description = document.getElementById("age").value;
   var nom = document.getElementById("nom").value;
