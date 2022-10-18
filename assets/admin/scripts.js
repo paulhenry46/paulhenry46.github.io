@@ -28,6 +28,8 @@ function sampleFunction() {
   var nouv11 = "\"></i>";
   var nouv12 = " \n \t \t \t \t \t \t \t \t </div>\n \t \t \t \t \t \t \t </div>\n \t \t \t \t \t \t \t <div class=\"col-lg-6 col-md-8\">\n \t \t \t \t \t \t \t <a href=\"assets/";
   var nouv13 = ".pdf\" class=\"btn btn-primary btn-sm btn-block animate-icon\">PDF<i class=\"ml-1 no-mr zmdi zmdi-long-arrow-right\"></i></a>\n \t \t \t \t \t \t</div>\n \t \t \t \t \t</div>\n \t \t \t \t</div>\n \t \t \t \t </article>\n \t \t \t </div>\n \t \t \t <!-- Fin article-->";
+  var essai1 = "bonjour ${prenom}"
+  var prenom = "polo"
   if(document.getElementById('public1').checked == true){
     var Public = "Gen"
     var repertoire1 = "gen/"
@@ -87,7 +89,7 @@ function sampleFunction() {
     var type = "Méthodologie"
     var couleurmat = "royal"
   }
-  var final = description+nom+titredesfichiers+Public+repertoire2+matiere+date+type;
+  var final = description+nom+titredesfichiers+Public+repertoire2+matiere+date+type+essai1;
   var finalmat = mat1+couleurmat+mat2+ide+mat21+repertoire1+repertoire2+titredesfichiers+mat3+repertoire1+repertoire2+titredesfichiers+mat4+nom+mat6+description+mat7+couleurmat+mat8+type+mat81+repertoire1+repertoire2+titredesfichiers+mat9
   var finalnouv = nouv1+couleurnouv+nouv2+ide+nouv21+repertoire1+repertoire2+titredesfichiers+nouv3+repertoire1+repertoire2+titredesfichiers+nouv4+matiere+nouv5+nom+nouv6+description+nouv7+couleurnouv+nouv9+matiere+nouv10+couleurnouv+nouv11+date+nouv12+repertoire1+repertoire2+titredesfichiers+nouv13
   document.getElementById("sampleText").value = final;
