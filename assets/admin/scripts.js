@@ -103,7 +103,7 @@ function sampleFunction() {
   var finalmat2 = mat1+couleurmat+mat2+ide+mat21+repertoire1+repertoire2+titredesfichiers+mat3+repertoire1+repertoire2+titredesfichiers+mat4+nom+mat6+description+mat7+couleurmat+mat8+type+lien
   var finalnouv2 = nouv1+couleurnouv+nouv2+ide+nouv21+repertoire1+repertoire2+titredesfichiers+nouv3+repertoire1+repertoire2+titredesfichiers+nouv4+matiere+nouv5+nom+nouv6+description+nouv7+couleurnouv+nouv9+matiere+nouv10+couleurnouv+nouv11+date+lien
   document.getElementById("sampleText").value = final;
-  document.getElementById("pagemat2").value = finalmat;
-  document.getElementById("pagenouv2").value = finalnouv;
+  document.getElementById("pagemat").value = finalmat2;
+  document.getElementById("pagenouv").value = finalnouv2;
   
 }
