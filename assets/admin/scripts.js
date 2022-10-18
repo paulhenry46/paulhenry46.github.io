@@ -28,8 +28,8 @@ function sampleFunction() {
   var nouv11 = "\"></i>";
   var nouv12 = " \n \t \t \t \t \t \t \t \t </div>\n \t \t \t \t \t \t \t </div>\n \t \t \t \t \t \t \t <div class=\"col-lg-6 col-md-8\">\n \t \t \t \t \t \t \t <a href=\"assets/";
   var nouv13 = ".pdf\" class=\"btn btn-primary btn-sm btn-block animate-icon\">PDF<i class=\"ml-1 no-mr zmdi zmdi-long-arrow-right\"></i></a>\n \t \t \t \t \t \t</div>\n \t \t \t \t \t</div>\n \t \t \t \t</div>\n \t \t \t \t </article>\n \t \t \t </div>\n \t \t \t <!-- Fin article-->";
-  var essai1 = "bonjour ${prenom}"
   var prenom = "polo"
+  var essai1 = "bonjour ${prenom}"
   if(document.getElementById('public1').checked == true){
     var Public = "Gen"
     var repertoire1 = "gen/"
