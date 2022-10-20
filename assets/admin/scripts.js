@@ -33,6 +33,7 @@ function sampleFunction() {
   var lienD1 = " \n \t \t \t \t \t \t \t \t </div>\n \t \t \t \t \t \t \t </div>\n \t \t \t \t \t \t \t <div class=\"col-lg-6 col-md-8\">\n \t \t \t \t \t \t \t <a href=\"assets/";
   var lienD2 = "vn.pdf\" class=\"btn btn-primary btn-sm btn-block animate-icon\">NOIR<i class=\"ml-1 no-mr zmdi zmdi-long-arrow-right\"></i></a><a href=\"assets/";
   var lienD3 = "vc.pdf\" class=\"btn btn-primary btn-sm btn-block animate-icon\">CLAIR<i class=\"ml-1 no-mr zmdi zmdi-long-arrow-right\"></i></a>\n \t \t \t \t \t \t</div>\n \t \t \t \t \t</div>\n \t \t \t \t</div>\n \t \t \t \t </article>\n \t \t \t </div>\n \t \t \t <!-- Fin article-->";
+  var balisea = "</a>";
   if(document.getElementById('public1').checked == true){
     var Public = "Gen"
     var repertoire1 = "gen/"
@@ -100,7 +101,7 @@ function sampleFunction() {
   var final = description+nom+titredesfichiers+Public+repertoire2+matiere+date+type;
   var finalmat = mat1+couleurmat+mat2+ide+mat21+repertoire1+repertoire2+titredesfichiers+mat3+repertoire1+repertoire2+titredesfichiers+mat4+nom+mat6+description+mat7+couleurmat+mat8+type+mat81+repertoire1+repertoire2+titredesfichiers+mat9
   var finalnouv = nouv1+couleurnouv+nouv2+ide+nouv21+repertoire1+repertoire2+titredesfichiers+nouv3+repertoire1+repertoire2+titredesfichiers+nouv4+matiere+nouv5+nom+nouv6+description+nouv7+couleurnouv+nouv9+matiere+nouv10+couleurnouv+nouv11+date+nouv12+repertoire1+repertoire2+titredesfichiers+nouv13
-  var finalmat2 = mat1+couleurmat+mat2+ide+mat21+repertoire1+repertoire2+titredesfichiers+mat3+repertoire1+repertoire2+titredesfichiers+mat4+nom+mat6+description+mat7+couleurmat+mat8+type+lien
+  var finalmat2 = mat1+couleurmat+mat2+ide+mat21+repertoire1+repertoire2+titredesfichiers+mat3+repertoire1+repertoire2+titredesfichiers+mat4+nom+mat6+description+mat7+couleurmat+mat8+type+balisea+lien
   var finalnouv2 = nouv1+couleurnouv+nouv2+ide+nouv21+repertoire1+repertoire2+titredesfichiers+nouv3+repertoire1+repertoire2+titredesfichiers+nouv4+matiere+nouv5+nom+nouv6+description+nouv7+couleurnouv+nouv9+matiere+nouv10+couleurnouv+nouv11+date+lien
   document.getElementById("sampleText").value = final;
   document.getElementById("pagemat").value = finalmat2;
