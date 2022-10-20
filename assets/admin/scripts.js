@@ -46,7 +46,7 @@ function sampleFunction() {
     var repertoire2 = "maths/"
   }
   if(document.getElementById('pc').checked == true){
-    var matiere = "Physique-Chimie (EDS)"
+    var matiere = "Physique-Chimie"
     var couleurnouv = "info"
     var repertoire2 = "pc/"
   }
