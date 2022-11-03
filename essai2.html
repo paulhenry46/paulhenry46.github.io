@@ -1,0 +1,683 @@
+<!---début header global--->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#333">
+  <title>Material Style</title>
+  <meta name="description" content="Material Style Theme">
+  <link rel="shortcut icon" href="assets/img/favicon30f4.png?v=3">
+  <link rel="stylesheet" href="../../../../fonts.googleapis.com/icone91f.css?family=Material+Icons">
+  <link rel="stylesheet" href="assets/css/plugins.min.css">
+  <link rel="stylesheet" href="assets/css/style.light-blue-500.min.css">
+  <link rel="stylesheet" href="assets/css/width-boxed.min.css" id="ms-boxed" disabled="">
+
+  </head>
+  <body>
+    <script type="text/javascript">
+      (function(window, document, dataLayerName, id) {
+      window[dataLayerName]=window[dataLayerName]||[],window[dataLayerName].push({start:(new Date).getTime(),event:"stg.start"});var scripts=document.getElementsByTagName('script')[0],tags=document.createElement('script');
+      function stgCreateCookie(a,b,c){var d="";if(c){var e=new Date;e.setTime(e.getTime()+24*c*60*60*1e3),d="; expires="+e.toUTCString()}document.cookie=a+"="+b+d+"; path=/"}
+      var isStgDebug=(window.location.href.match("stg_debug")||document.cookie.match("stg_debug"))&&!window.location.href.match("stg_disable_debug");stgCreateCookie("stg_debug",isStgDebug?1:"",isStgDebug?14:-1);
+      var qP=[];dataLayerName!=="dataLayer"&&qP.push("data_layer_name="+dataLayerName),isStgDebug&&qP.push("stg_debug");var qPString=qP.length>0?("?"+qP.join("&")):"";
+      tags.async=!0,tags.src="https://paulhenry.containers.piwik.pro/"+id+".js"+qPString,scripts.parentNode.insertBefore(tags,scripts);
+      !function(a,n,i){a[n]=a[n]||{};for(var c=0;c<i.length;c++)!function(i){a[n][i]=a[n][i]||{},a[n][i].api=a[n][i].api||function(){var a=[].slice.call(arguments,0);"string"==typeof a[0]&&window[dataLayerName].push({event:n+"."+i+":"+a[0],parameters:[].slice.call(arguments,1)})}}(i[c])}(window,"ppms",["tm","cm"]);
+      })(window, document, 'dataLayer', '12cdf307-f21f-41ae-84d4-34cd3d6de544');
+      </script>
+    <div id="ms-preload" class="ms-preload">
+      <div id="status">
+        <div class="spinner">
+          <div class="dot1"></div>
+          <div class="dot2"></div>
+        </div>
+      </div>
+    </div>
+    <div class="ms-site-container">
+      <!-- Modal -->
+      <div class="modal modal-primary" id="ms-account-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog animated zoomIn animated-3x" role="document">
+          <div class="modal-content">
+            <div class="modal-header d-block shadow-2dp no-pb">
+              <button type="button" class="close d-inline pull-right mt-2" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="zmdi zmdi-close"></i></span></button>
+              <div class="modal-title text-center">
+                <span class="ms-logo ms-logo-white ms-logo-sm mr-1">F</span>
+                <h3 class="no-m ms-site-title">Fiches et <span>Cartes mentales</span></h3>
+              </div>
+            </div>
+            <div class="modal-body">
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade active show" id="ms-login-tab">
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="ms-register-tab">
+                  <form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <header class="ms-header ms-header-primary">
+        <!--ms-header-primary-->
+        <div class="container container-full">
+          <div class="ms-title">
+            <a href="index.html">
+              <!-- <img src="assets/img/demo/logo-header.png" alt=""> -->
+              <span class="ms-logo animated zoomInDown animation-delay-5">F</span>
+              <h1 class="animated fadeInRight animation-delay-6">Fiches et Cartes mentales</h1>
+            </a>
+          </div>
+          <div class="header-right">
+            <a href="javascript:void(0)" class="btn-ms-menu btn-circle btn-circle-primary ms-toggle-left animated zoomInDown animation-delay-10"><i class="zmdi zmdi-menu"></i></a>
+          </div>
+        </div>
+      </header>
+      <nav class="navbar navbar-expand-md  navbar-static ms-navbar ms-navbar-primary">
+        <div class="container container-full">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">
+              <!-- <img src="assets/img/demo/logo-navbar.png" alt=""> -->
+              <span class="ms-logo ms-logo-sm">F</span>
+              <span class="ms-title">Fiches et cartes mentales</span>
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="ms-navbar">
+            <ul class="navbar-nav">
+             <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle animated fadeIn animation-delay-8" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="portfolio">Toutes les cartes <i class="zmdi zmdi-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a href="nouveautes.html" class="dropdown-item">Nouveautés</a></li>
+                  <li class="dropdown-divider"></li>
+                  <li><a href="maths.html" class="dropdown-item">Mathématiques (EDS)</a></li>
+                  <li><a href="pc.html" class="dropdown-item">Physique-Chimie (EDS)</a></li>
+                  <li><a class="dropdown-item" href="svt.html" >SVT (EDS)</a></li>
+                  <li><a class="dropdown-item" href="enss.html" >ENS scientifique</a></li>
+                  <li><a href="histoiregeo.html" class="dropdown-item">Histoire-Géo</a></li>
+                  <li><a href="anglais.html" class="dropdown-item">Anglais</a></li>
+                  <li><a href="espagnol.html" class="dropdown-item">Espagnol</a></li>
+                  <li><a href="francais.html" class="dropdown-item">Français</a></li>
+                  <li><a href="autre.html" class="dropdown-item">Autre matière</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle animated fadeIn animation-delay-8" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="aide">Aide <i class="zmdi zmdi-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#" data-toggle="modal" data-target="#myModal"><i class="zmdi zmdi-email"></i>Me contacter</a></li>
+                  <li><a class="dropdown-item" href="faq.html"><i class="zmdi zmdi-help"></i>FAQ</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle animated fadeIn animation-delay-8" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="autres">Autres <i class="zmdi zmdi-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://github.com/paulhenry46/Fiches_cartes_mentales"><i class="zmdi zmdi-download"></i> Télécharger les sources</a></li>
+                  <li><a class="dropdown-item" href="about.html"><i class="zmdi zmdi-account"></i> Qui sommes-nous ?</a></li>
+                  <li><a class="dropdown-item" href="archives2nd/index.html"><i class="zmdi zmdi-folder"></i>Archives 2nd</a></li>
+                  <li><a class="dropdown-item" href="mentions-legales.html"><i class="zmdi zmdi-info"></i>Mentions légales</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <a href="javascript:void(0)" class="ms-toggle-left btn-navbar-menu"><i class="zmdi zmdi-menu"></i></a>
+        </div> <!-- container -->
+      </nav>
+      <div class="ms-hero-page bg-info">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 order-lg-2 text-center">
+              <img src="assets/img/demo/pixelPro.png" alt="" class="img-fluid animated bounceInRight animation-delay-14">
+            </div>
+            <div class="col-lg-6 order-lg-1">
+              <h1 class="animated fadeInDown animation-delay-4">Google Pixel</h1>
+              <p class="lead lead-lg animated fadeInDown animation-delay-5">The future is in your hands</p>
+              <p class="animated fadeInDown animation-delay-6">It has the highest rated smartphone camera. Ever. A battery that lasts all day. Unlimited storage for all your photos and videos. And it’s the first phone with the Google Assistant built in.</p>
+              <ul class="list-unstyled">
+                <li class="animated fadeInLeft animation-delay-7">5.5 inches QHD AMOLED at 534ppi.</li>
+                <li class="animated fadeInLeft animation-delay-8">4GB LPDDR4 RAM.</li>
+                <li class="animated fadeInLeft animation-delay-9">32 or 128GB.</li>
+                <li class="animated fadeInLeft animation-delay-10">Qualcomm® Snapdragon™ 821.</li>
+                <li class="animated fadeInLeft animation-delay-11">12.3MP Large 1.55μm pixels.</li>
+              </ul>
+              <a href="javascript:void(0)" class="btn btn-raised btn-royal animated fadeInLeft animation-delay-14">More info</a>
+              <a href="javascript:void(0)" class="btn btn-raised btn-white color-info animated fadeInRight animation-delay-14">Purchase</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrap bg-warning">
+        <div class="container">
+          <h1 class="color-white text-center mb-4">Latest Offers</h1>
+          <div class="row color-dark">
+            <div class="col-lg-4 col-md-6 mix laptop apple" data-price="1999.99" data-date="20160901">
+              <div class="card wow zoomInUp">
+                <div class="card-body overflow-hidden text-center">
+                  <a href="ecommerce-item.html"><img src="assets/img/demo/products/macbook.png" alt="" class="img-fluid center-block"></a>
+                  <h4 class="text-normal text-center">Macbook Pro 2015</h4>
+                  <p>Quibusdam aperiam tempora ut blanditiis cumque ab pariatur.</p>
+                  <div class="mt-2">
+                    <span class="mr-2">
+                      <i class="zmdi zmdi-star color-warning"></i>
+                      <i class="zmdi zmdi-star color-warning"></i>
+                      <i class="zmdi zmdi-star color-warning"></i>
+                      <i class="zmdi zmdi-star color-warning"></i>
+                      <i class="zmdi zmdi-star"></i>
+                    </span>
+                    <span class="ms-tag ms-tag-success">$ 1999.99</span>
+                  </div>
+                  <a href="javascript:void(0)" class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-shopping-cart-plus"></i> Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mix tablet apple" data-price="999.99" data-date="20160705">
+              <div class="card wow zoomInUp">
+                <div class="card-body overflow-hidden text-center">
+                  <a href="ecommerce-item.html"><img src="assets/img/demo/products/ipad.png" alt="" class="img-fluid center-block"></a>
+                  <h4 class="text-normal text-center">iPad Pro</h4>
+                  <p>Quibusdam aperiam tempora ut blanditiis cumque ab pariatur.</p>
+                  <div class="mt-2">
+                    <span class="mr-2">
+                      <i class="zmdi zmdi-star color-warning"></i>
+                      <i class="zmdi zmdi-star color-warning"></i>
+                      <i class="zmdi zmdi-star color-warning"></i>
+                      <i class="zmdi zmdi-star color-warning"></i>
+                      <i class="zmdi zmdi-star color-warning"></i>
+                    </span>
+                    <span class="ms-tag ms-tag-success">$ 999.99</span>
+                  </div>
+                  <a href="javascript:void(0)" class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-shopping-cart-plus"></i> Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mix accessory samsung" data-price="459.89" data-date="20160815">
+              <div class="card wow zoomInUp">
+                <div class="card-body overflow-hidden text-center">
+                  <a href="ecommerce-item.html"><img src="assets/img/demo/products/gear.png" alt="" class="img-fluid center-block"></a>
+                  <h4 class="text-normal text-center">Galaxy Gear S3</h4>
+                  <p>Quibusdam aperiam tempora ut blanditiis cumque ab pariatur.</p>
+                  <div class="mt-2">
+                    <span class="mr-2">
+                      <i class="zmdi zmdi-star color-warning"></i>
+                      <i class="zmdi zmdi-star color-warning"></i>
+                      <i class="zmdi zmdi-star color-warning"></i>
+                      <i class="zmdi zmdi-star"></i>
+                      <i class="zmdi zmdi-star"></i>
+                    </span>
+                    <span class="ms-tag ms-tag-success">$ 459.89</span>
+                  </div>
+                  <a href="javascript:void(0)" class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-shopping-cart-plus"></i> Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mix accessory apple" data-price="769.99" data-date="20151014">
+              <div class="card wow zoomInUp">
+                <div class="card-body overflow-hidden text-center">
+                  <a href="ecommerce-item.html"><img src="assets/img/demo/products/appleWatch.png" alt="" class="img-fluid center-block"></a>
+                  <h4 class="text-normal text-center">Apple Watch Serie 2</h4>
+                  <p>Quibusdam aperiam tempora ut blanditiis cumque ab pariatur.</p>
+                  <div class="mt-2">
+                    <span class="mr-2">
+                      <i class="zmdi zmdi-star color-warning"></i>
+                      <i class="zmdi zmdi-star color-warning"></i>
+                      <i class="zmdi zmdi-star color-warning"></i>
+                      <i class="zmdi zmdi-star"></i>
+                      <i class="zmdi zmdi-star"></i>
+                    </span>
+                    <span class="ms-tag ms-tag-success">$ 769.99</span>
+                  </div>
+                  <a href="javascript:void(0)" class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-shopping-cart-plus"></i> Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mix smartphone samsung" data-price="569.99" data-date="20151201">
+              <div class="card wow zoomInUp">
+                <div class="card-body overflow-hidden text-center">
+                  <a href="ecommerce-item.html"><img src="assets/img/demo/products/s7.png" alt="" class="img-fluid center-block"></a>
+                  <h4 class="text-normal text-center">Samsung Galaxy S7</h4>
+                  <p>Quibusdam aperiam tempora ut blanditiis cumque ab pariatur.</p>
+                  <div class="mt-2">
+                    <span class="mr-2">
+                      <i class="zmdi zmdi-star color-warning"></i>
+                      <i class="zmdi zmdi-star color-warning"></i>
+                      <i class="zmdi zmdi-star color-warning"></i>
+                      <i class="zmdi zmdi-star color-warning"></i>
+                      <i class="zmdi zmdi-star"></i>
+                    </span>
+                    <span class="ms-tag ms-tag-success">$ 569.99</span>
+                  </div>
+                  <a href="javascript:void(0)" class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-shopping-cart-plus"></i> Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mix laptop microsoft" data-price="2499.25" data-date="20161205">
+              <div class="card wow zoomInUp">
+                <div class="card-body overflow-hidden text-center">
+                  <a href="ecommerce-item.html"><img src="assets/img/demo/products/surfaceBook.png" alt="" class="img-fluid center-block"></a>
+                  <h4 class="text-normal text-center">Microsoft Surface Book</h4>
+                  <p>Quibusdam aperiam tempora ut blanditiis cumque ab pariatur.</p>
+                  <div class="mt-2">
+                    <span class="mr-2">
+                      <i class="zmdi zmdi-star color-warning"></i>
+                      <i class="zmdi zmdi-star color-warning"></i>
+                      <i class="zmdi zmdi-star color-warning"></i>
+                      <i class="zmdi zmdi-star color-warning"></i>
+                      <i class="zmdi zmdi-star"></i>
+                    </span>
+                    <span class="ms-tag ms-tag-success">$ 2499.25</span>
+                  </div>
+                  <a href="javascript:void(0)" class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-shopping-cart-plus"></i> Add to Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- container -->
+      </div>
+      <div class="container mt-6">
+        <h1 class="text-center mb-4">Products</h1>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Filter List</h3>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-8">
+                    <form class="form-horizontal" id="Filters">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <fieldset>
+                            <h4 class="mb-1 no-mt">Devices</h4>
+                            <div class="form-group no-mt">
+                              <div class="checkbox ml-2">
+                                <label>
+                                  <input type="checkbox" value=".smartphone"> Smartphones </label>
+                              </div>
+                              <div class="checkbox  ml-2">
+                                <label>
+                                  <input type="checkbox" value=".tablet"> Tablets </label>
+                              </div>
+                              <div class="checkbox  ml-2">
+                                <label>
+                                  <input type="checkbox" value=".laptop"> Laptops </label>
+                              </div>
+                              <div class="checkbox  ml-2">
+                                <label>
+                                  <input type="checkbox" value=".accessory"> Accesories </label>
+                              </div>
+                            </div>
+                          </fieldset>
+                        </div>
+                        <div class="col-md-6">
+                          <fieldset>
+                            <h4 class="mb-1">Brand</h4>
+                            <div class="form-group no-mt">
+                              <div class="checkbox  ml-2">
+                                <label>
+                                  <input type="checkbox" value=".apple"> Apple </label>
+                              </div>
+                              <div class="checkbox  ml-2">
+                                <label>
+                                  <input type="checkbox" value=".microsoft"> Microsoft </label>
+                              </div>
+                              <div class="checkbox  ml-2">
+                                <label>
+                                  <input type="checkbox" value=".samsung"> Samsung </label>
+                              </div>
+                            </div>
+                          </fieldset>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="col-md-4">
+                    <form class="form-horizontal">
+                      <h4>Sort by</h4>
+                      <select id="SortSelect" class="form-control selectpicker">
+                        <option value="random">Popular</option>
+                        <option value="price:asc">Price ASC</option>
+                        <option value="price:desc">Price DESC</option>
+                        <option value="date:asc">Release ASC</option>
+                        <option value="date:desc">Release DESC</option>
+                      </select>
+                    </form>
+                    <button class="btn btn-danger btn-block no-mb mt-2" id="Reset"><i class="zmdi zmdi-delete"></i> Clear Filters</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="row" id="Container">
+              <div class="col-xl-3 col-lg-4 col-sm-6 mix laptop apple" data-price="1999.99" data-date="20160901">
+                <div class="card">
+                  <div class="card-body overflow-hidden text-center">
+                    <a href="ecommerce-item.html"><img src="assets/img/demo/products/macbook.png" alt="" class="img-fluid center-block"></a>
+                    <h4 class="text-normal text-center">Macbook Pro 2015</h4>
+                    <p>Quibusdam aperiam tempora ut blanditiis cumque ab pariatur.</p>
+                    <div class="mt-2">
+                      <span class="mr-2">
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star"></i>
+                      </span>
+                      <span class="ms-tag ms-tag-success">$ 1999.99</span>
+                    </div>
+                    <a href="javascript:void(0)" class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-shopping-cart-plus"></i> Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-sm-6 mix tablet apple" data-price="999.99" data-date="20160705">
+                <div class="card">
+                  <div class="card-body overflow-hidden text-center">
+                    <a href="ecommerce-item.html"><img src="assets/img/demo/products/ipad.png" alt="" class="img-fluid center-block"></a>
+                    <h4 class="text-normal text-center">iPad Pro</h4>
+                    <p>Quibusdam aperiam tempora ut blanditiis cumque ab pariatur.</p>
+                    <div class="mt-2">
+                      <span class="mr-2">
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star color-warning"></i>
+                      </span>
+                      <span class="ms-tag ms-tag-success">$ 999.99</span>
+                    </div>
+                    <a href="javascript:void(0)" class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-shopping-cart-plus"></i> Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-sm-6 mix accessory samsung" data-price="459.89" data-date="20160815">
+                <div class="card">
+                  <div class="card-body overflow-hidden text-center">
+                    <a href="ecommerce-item.html"><img src="assets/img/demo/products/gear.png" alt="" class="img-fluid center-block"></a>
+                    <h4 class="text-normal text-center">Galaxy Gear S3</h4>
+                    <p>Quibusdam aperiam tempora ut blanditiis cumque ab pariatur.</p>
+                    <div class="mt-2">
+                      <span class="mr-2">
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star"></i>
+                        <i class="zmdi zmdi-star"></i>
+                      </span>
+                      <span class="ms-tag ms-tag-success">$ 459.89</span>
+                    </div>
+                    <a href="javascript:void(0)" class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-shopping-cart-plus"></i> Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-sm-6 mix accessory apple" data-price="769.99" data-date="20151014">
+                <div class="card">
+                  <div class="card-body overflow-hidden text-center">
+                    <a href="ecommerce-item.html"><img src="assets/img/demo/products/appleWatch.png" alt="" class="img-fluid center-block"></a>
+                    <h4 class="text-normal text-center">Apple Watch Serie 2</h4>
+                    <p>Quibusdam aperiam tempora ut blanditiis cumque ab pariatur.</p>
+                    <div class="mt-2">
+                      <span class="mr-2">
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star"></i>
+                        <i class="zmdi zmdi-star"></i>
+                      </span>
+                      <span class="ms-tag ms-tag-success">$ 769.99</span>
+                    </div>
+                    <a href="javascript:void(0)" class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-shopping-cart-plus"></i> Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-sm-6 mix smartphone samsung" data-price="569.99" data-date="20151201">
+                <div class="card">
+                  <div class="card-body overflow-hidden text-center">
+                    <a href="ecommerce-item.html"><img src="assets/img/demo/products/s7.png" alt="" class="img-fluid center-block"></a>
+                    <h4 class="text-normal text-center">Samsung Galaxy S7</h4>
+                    <p>Quibusdam aperiam tempora ut blanditiis cumque ab pariatur.</p>
+                    <div class="mt-2">
+                      <span class="mr-2">
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star"></i>
+                      </span>
+                      <span class="ms-tag ms-tag-success">$ 569.99</span>
+                    </div>
+                    <a href="javascript:void(0)" class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-shopping-cart-plus"></i> Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-sm-6 mix laptop microsoft" data-price="2499.25" data-date="20161205">
+                <div class="card">
+                  <div class="card-body overflow-hidden text-center">
+                    <a href="ecommerce-item.html"><img src="assets/img/demo/products/surfaceBook.png" alt="" class="img-fluid center-block"></a>
+                    <h4 class="text-normal text-center">Microsoft Surface Book</h4>
+                    <p>Quibusdam aperiam tempora ut blanditiis cumque ab pariatur.</p>
+                    <div class="mt-2">
+                      <span class="mr-2">
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star"></i>
+                      </span>
+                      <span class="ms-tag ms-tag-success">$ 2499.25</span>
+                    </div>
+                    <a href="javascript:void(0)" class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-shopping-cart-plus"></i> Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-sm-6 mix smartphone apple" data-price="769.00" data-date="20160907">
+                <div class="card">
+                  <div class="card-body overflow-hidden text-center">
+                    <a href="ecommerce-item.html"><img src="assets/img/demo/products/iphone7.png" alt="" class="img-fluid center-block"></a>
+                    <h4 class="text-normal text-center">iPhone 7 Plus</h4>
+                    <p>Quibusdam aperiam tempora ut blanditiis cumque ab pariatur.</p>
+                    <div class="mt-2">
+                      <span class="mr-2">
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star"></i>
+                      </span>
+                      <span class="ms-tag ms-tag-success">$ 769.00</span>
+                    </div>
+                    <a href="javascript:void(0)" class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-shopping-cart-plus"></i> Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-sm-6 mix accessory samsung" data-price="819.00" data-date="20160725">
+                <div class="card">
+                  <div class="card-body overflow-hidden text-center">
+                    <a href="ecommerce-item.html"><img src="assets/img/demo/products/vr.png" alt="" class="img-fluid center-block"></a>
+                    <h4 class="text-normal text-center">Gear VR</h4>
+                    <p>Quibusdam aperiam tempora ut blanditiis cumque ab pariatur.</p>
+                    <div class="mt-2">
+                      <span class="mr-2">
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star"></i>
+                      </span>
+                      <span class="ms-tag ms-tag-success">$ 2499.25</span>
+                    </div>
+                    <a href="javascript:void(0)" class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-shopping-cart-plus"></i> Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-sm-6 mix tablet microsoft" data-price="799.80" data-date="20151015">
+                <div class="card">
+                  <div class="card-body overflow-hidden text-center">
+                    <a href="ecommerce-item.html"><img src="assets/img/demo/products/surface.png" alt="" class="img-fluid center-block"></a>
+                    <h4 class="text-normal text-center">Surface Pro 4</h4>
+                    <p>Quibusdam aperiam tempora ut blanditiis cumque ab pariatur.</p>
+                    <div class="mt-2">
+                      <span class="mr-2">
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star"></i>
+                      </span>
+                      <span class="ms-tag ms-tag-success">$ 799.80</span>
+                    </div>
+                    <a href="javascript:void(0)" class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-shopping-cart-plus"></i> Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-sm-6 mix accessory microsoft" data-price="79.95" data-date="20151015">
+                <div class="card">
+                  <div class="card-body overflow-hidden text-center">
+                    <a href="ecommerce-item.html"><img src="assets/img/demo/products/xboxController.png" alt="" class="img-fluid center-block"></a>
+                    <h4 class="text-normal text-center">Xbox One Controller</h4>
+                    <p>Quibusdam aperiam tempora ut blanditiis cumque ab pariatur.</p>
+                    <div class="mt-2">
+                      <span class="mr-2">
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star"></i>
+                      </span>
+                      <span class="ms-tag ms-tag-success">$ 79.95</span>
+                    </div>
+                    <a href="javascript:void(0)" class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-shopping-cart-plus"></i> Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-sm-6 mix smartphone microsoft" data-price="298.99" data-date="20141015">
+                <div class="card">
+                  <div class="card-body overflow-hidden text-center">
+                    <a href="ecommerce-item.html"><img src="assets/img/demo/products/lumia.png" alt="" class="img-fluid center-block"></a>
+                    <h4 class="text-normal text-center">Lumia 950</h4>
+                    <p>Quibusdam aperiam tempora ut blanditiis cumque ab pariatur.</p>
+                    <div class="mt-2">
+                      <span class="mr-2">
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star"></i>
+                      </span>
+                      <span class="ms-tag ms-tag-success">$ 298.99</span>
+                    </div>
+                    <a href="javascript:void(0)" class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-shopping-cart-plus"></i> Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-sm-6 mix tablet samsung" data-price="538.99" data-date="20151015">
+                <div class="card">
+                  <div class="card-body overflow-hidden text-center">
+                    <a href="ecommerce-item.html"><img src="assets/img/demo/products/galaxyTab.png" alt="" class="img-fluid center-block"></a>
+                    <h4 class="text-normal text-center">Galaxy Tab S2</h4>
+                    <p>Quibusdam aperiam tempora ut blanditiis cumque ab pariatur.</p>
+                    <div class="mt-2">
+                      <span class="mr-2">
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star color-warning"></i>
+                        <i class="zmdi zmdi-star"></i>
+                      </span>
+                      <span class="ms-tag ms-tag-success">$ 538.99</span>
+                    </div>
+                    <a href="javascript:void(0)" class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-shopping-cart-plus"></i> Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- container -->
+        <!--- Début footer + menu mobile--->
+      <footer class="ms-footer">
+        <div class="container">
+          <p>Made with ❤️ by Paulhenry.</p>
+        </div>
+      </footer>
+      <div class="btn-back-top">
+        <a href="#" data-scroll id="back-top" class="btn-circle btn-circle-primary btn-circle-sm btn-circle-raised "><i class="zmdi zmdi-long-arrow-up"></i></a>
+      </div>
+    </div> <!-- ms-site-container -->
+     <div class="ms-slidebar sb-slidebar sb-left sb-style-overlay" id="ms-slidebar">
+      <div class="sb-slidebar-container">
+        <header class="ms-slidebar-header">
+          <div class="ms-slidebar-login">
+          </div>
+          <div class="ms-slidebar-title">
+            <div class="ms-slidebar-t">
+              <span class="ms-logo ms-logo-sm">F</span>
+              <h3>Fiches et<span>Cartes</span></h3>
+            </div>
+          </div>
+        </header>
+        <ul class="ms-slidebar-menu" id="slidebar-menu" role="tablist" aria-multiselectable="true">
+          <li>
+            <a class="link" href="index.html"><i class="zmdi zmdi-home"></i>Accueil</a>
+          </li>
+          <li>
+            <a class="link" href="nouveautes.html"><i class="zmdi zmdi-link"></i>Nouveautés</a>
+          </li>
+          <li class="card" role="tab" id="sch4">
+            <a class="collapsed" role="button" data-toggle="collapse" href="#sc4" aria-expanded="false" aria-controls="sc4">
+              <i class="zmdi zmdi-edit"></i> Matières </a>
+            <ul id="sc4" class="card-collapse collapse" role="tabpanel" aria-labelledby="sch4" data-parent="#slidebar-menu">
+              <li><a href="maths.html">Maths (EDS)</a></li>
+              <li><a href="pc.html">Physique-Chimie (EDS)</a></li>
+              <li><a href="svt.html">SVT (EDS)</a></li>
+              <li><a href="enss.html">ENS scientifique</a></li>
+              <li><a href="histoiregeo.html">Histoire-Géo</a></li>
+              <li><a href="anglais.html">Anglais</a></li>
+              <li><a href="espagnol.html">Espagnol</a></li>
+              <li><a href="francais.html">Français</a></li>
+            </ul>
+          </li>
+          <li class="card" role="tab" id="sch5">
+            <a class="collapsed" role="button" data-toggle="collapse" href="#sc5" aria-expanded="false" aria-controls="sc5">
+              <i class="zmdi zmdi-help"></i>Autres</a>
+            <ul id="sc5" class="card-collapse collapse" role="tabpanel" aria-labelledby="sch5" data-parent="#slidebar-menu">
+              <li><a href="faq.html">FAQ</a></li>
+              <li class="btn-ms-menu ms-toggle-left animation-delay-10" href="javascript:void(0)"><a data-toggle="modal" data-target="#myModal">Me contacter</a></li>
+              <li><a href="about.html">Qui sommes-nous ?</a></li>
+              <li><a href="archives2nd/index.html">Archives 2nd</a></li>
+              <li><a href="archives3eme/index.html">Archives Brevet</a></li>
+              <li><a href="mentions-legales.html">Mentions légales</a></li>  
+            </ul>
+          </li>
+          <li>
+            <a class="link" href="#" onclick="setActiveStyleSheet('standard'); return false;"><i class="mr-2 fa fa-moon-o"></i>Thème sombre</a>
+          </li>
+          <li>
+            <a class="link" href="#" onclick="setActiveStyleSheet('bleu'); return false;"><i class="mr-2 fa fa-sun-o"></i>Thème clair</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="modal modal-primary" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog animated zoomIn animated-3x" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title color-primary" id="myModalLabel">Contact</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="zmdi zmdi-close"></i></span></button>
+            </div>
+            <div class="modal-body">
+                Toutes les demandes d'aide concernant les devoirs seront ignorées.
+                Ceci étant dit, vous pouvez me contacter par email (je préfère) ou par Instagram.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                <button type="button" class="btn  btn-primary"><a href="mailto:fichesetcartes@paulhenry.eu">Email</a></button>
+                <button type="button" class="btn  btn-primary"><a href="https://www.instagram.com/fichesetcartes/">Instagram</a></button>
+            </div>
+        </div>
+    </div>    
+    <script src="assets/js/essai/plugins.min.js"></script>
+    <script src="assets/js/essai/app.min.js"></script>
+    <script src="assets/js/essai/configurator.min.js"></script>
+    <script src="assets/js/essai/ecommerce.js"></script>
+  </body>
+</html>
