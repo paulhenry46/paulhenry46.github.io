@@ -1,7 +1,7 @@
 <!---début header global--->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -37,6 +37,29 @@
       </div>
     </div>
     <div class="ms-site-container">
+      <!-- Modal -->
+      <div class="modal modal-primary" id="ms-account-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog animated zoomIn animated-3x" role="document">
+          <div class="modal-content">
+            <div class="modal-header d-block shadow-2dp no-pb">
+              <button type="button" class="close d-inline pull-right mt-2" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="zmdi zmdi-close"></i></span></button>
+              <div class="modal-title text-center">
+                <span class="ms-logo ms-logo-white ms-logo-sm mr-1">F</span>
+                <h3 class="no-m ms-site-title">Fiches et <span>Cartes mentales</span></h3>
+              </div>
+            </div>
+            <div class="modal-body">
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade active show" id="ms-login-tab">
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="ms-register-tab">
+                  <form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <header class="ms-header ms-header-primary">
         <!--ms-header-primary-->
         <div class="container container-full">
@@ -56,6 +79,7 @@
         <div class="container container-full">
           <div class="navbar-header">
             <a class="navbar-brand" href="index.html">
+              <!-- <img src="assets/img/demo/logo-navbar.png" alt=""> -->
               <span class="ms-logo ms-logo-sm">F</span>
               <span class="ms-title">Fiches et cartes mentales</span>
             </a>
@@ -97,207 +121,165 @@
             </ul>
           </div>
           <a href="javascript:void(0)" class="ms-toggle-left btn-navbar-menu"><i class="zmdi zmdi-menu"></i></a>
-        </div>  <!--container -->
+        </div> <!-- container -->
       </nav>
-      <div class="container mt-6">
-        <h1 class="text-center mb-4">Cours de Français</h1>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card card-primary">
-              <div class="card-header">
-                <h3 class="card-title">Filtres</h3>
-              </div>
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-md-8">
-                    <form class="form-horizontal" id="Filters">
+      <!---fin header global--->
+      <div class="ms-hero-page ms-hero-bg-primary mb-6">
+        <div class="container">
+          <div class="text-center">
+            <span class="ms-logo ms-logo-lg ms-logo-white center-block mb-2 mt-2 animated zoomInDown animation-delay-5">Fr</span>
+            <h1 class="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">Français</h1>
+            <p class="lead lead-lg color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">Retrouvez ici toutes les fiches et cartes mentales publiées pour les cours de Français !</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card">
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs nav-tabs-full nav-tabs-2 shadow-2dp" role="tablist">
+              <li class="current"><a class="nav-link active" aria-controls="home"><i class="zmdi zmdi-book"></i> Général</a></li>
+              <li class=""><a class="nav-link" href="francais-leo.html" aria-controls="profile"><i class="zmdi zmdi-city-alt"></i> Léo Ferré</a></li>
+          </ul>
+        </div>
+        <div class="row masonry-container">
+          	 	 	 <!--Début article-->
+ 	 	 	 <div class="col-lg-4 col-md-6 masonry-item wow">
+        <article class="card card-royal mb-4 wow">
+           <figure class="ms-thumbnail ms-thumbnail-left">
+              <img id="deroulement" src="assets/gen/fr/deroulement.png" alt="" class="img-fluid">
+           </figure>
+           <div class="card-body">
+              <h2><a href="assets/gen/fr/deroulement.pdf">Déroulement de l'épreuve du bac de Français</a></h2>
+              <p>Courte explication sur l'épreuve de Français</p>
+              <div class="row">
+                <div class="col-lg-6 col-md-4"> 
+                    <div class="mt-05">
+                      <a href="#" class="ms-tag ms-tag-royal">Méthodologie</a>
+                    </div>
+                 </div>
+                 <div class="col-lg-6 col-md-8">
+                 <a href="assets/gen/fr/deroulement.pdf" class="btn btn-primary btn-sm btn-block animate-icon">PDF<i class="ml-1 no-mr zmdi zmdi-long-arrow-right"></i></a>
+             </div>
+          </div>
+       </div>
+        </article>
+     </div>
+     <!-- Fin article-->
+        	 	 	 <!--Début article-->
+ 	 	 	 <div class="col-lg-4 col-md-6 masonry-item wow">
+        <article class="card card-royal mb-4 wow">
+           <figure class="ms-thumbnail ms-thumbnail-left">
+              <img id="comcompose" src="assets/gen/fr/comcompose.png" alt="" class="img-fluid">
+           </figure>
+           <div class="card-body">
+              <h2><a href="assets/gen/fr/comcompose.pdf">Le commentaire composé</a></h2>
+              <p>Fiche de méthodologie sur le commentaire composé et sa structure</p>
+              <div class="row">
+                <div class="col-lg-6 col-md-4"> 
+                    <div class="mt-05">
+                      <a href="#" class="ms-tag ms-tag-royal">Méthodologie</a>
+                    </div>
+                 </div>
+                 <div class="col-lg-6 col-md-8">
+                 <a href="assets/gen/fr/comcompose.pdf" class="btn btn-primary btn-sm btn-block animate-icon">PDF<i class="ml-1 no-mr zmdi zmdi-long-arrow-right"></i></a>
+             </div>
+          </div>
+       </div>
+        </article>
+     </div>
+     <!-- Fin article-->
+     	 	 	 <!--Début article-->
+              <div class="col-lg-4 col-md-6 masonry-item wow">
+                <article class="card card-royal mb-4 wow">
+                   <figure class="ms-thumbnail ms-thumbnail-left">
+                      <img id="plancomcompose" src="assets/gen/fr/plancomcompose.png" alt="" class="img-fluid">
+                   </figure>
+                   <div class="card-body">
+                      <h2><a href="assets/gen/fr/plancomcompose.pdf">Le plan du commentaire</a></h2>
+                      <p>Fiche de méthodologie sur l'élaboration du plan du commentaire composé</p>
                       <div class="row">
-                        <div class="col-md-6">
-                          <fieldset>
-                            <h4 class="mb-1 no-mt">Thèmes</h4>
-                            <div class="form-group no-mt">
-                              <div class="checkbox ml-2">
-                                <label>
-                                  <input type="checkbox" value=".general"> Général </label>
-                              </div>
-                              <div class="checkbox  ml-2">
-                                <label>
-                                  <input type="checkbox" value=".theatre"> Théâtre </label>
-                              </div>
-                              <div class="checkbox  ml-2">
-                                <label>
-                                  <input type="checkbox" value=".idee"> Littérature d'idée </label>
-                              </div>
-                              <div class="checkbox  ml-2">
-                                <label>
-                                  <input type="checkbox" value=".poesie"> Poésie </label>
-                              </div>
+                        <div class="col-lg-6 col-md-4"> 
+                            <div class="mt-05">
+                              <a href="#" class="ms-tag ms-tag-royal">Méthodologie</a>
                             </div>
-                          </fieldset>
-                        </div>
-                        <div class="col-md-6">
-                          <fieldset>
-                            <h4 class="mb-1">Type</h4>
-                            <div class="form-group no-mt">
-                              <div class="checkbox  ml-2">
-                                <label>
-                                  <input type="checkbox" value=".cartem"> Carte mentale </label>
-                              </div>
-                              <div class="checkbox  ml-2">
-                                <label>
-                                  <input type="checkbox" value=".fiche"> Fiche de révision </label>
-                              </div>
-                              <div class="checkbox  ml-2">
-                                <label>
-                                  <input type="checkbox" value=".metodo"> Fiche de méthodologie </label>
-                              </div>
+                         </div>
+                         <div class="col-lg-6 col-md-8">
+                         <a href="assets/gen/fr/plancomcompose.pdf" class="btn btn-primary btn-sm btn-block animate-icon">PDF<i class="ml-1 no-mr zmdi zmdi-long-arrow-right"></i></a>
+                     </div>
+                  </div>
+               </div>
+                </article>
+             </div>
+             <!-- Fin article-->
+             	 	 	 <!--Début article-->
+ 	 	 	 <div class="col-lg-4 col-md-6 masonry-item wow">
+        <article class="card card-royal mb-4 wow">
+           <figure class="ms-thumbnail ms-thumbnail-left">
+              <img id="procomcompose" src="assets/gen/fr/procomcompose.png" alt="" class="img-fluid">
+           </figure>
+           <div class="card-body">
+              <h2><a href="assets/gen/fr/procomcompose.pdf">La problématique du commentaire</a></h2>
+              <p>Fiche de méthodologie sur la construction de la problématique du commentaire composé</p>
+              <div class="row">
+                <div class="col-lg-6 col-md-4"> 
+                    <div class="mt-05">
+                      <a href="#" class="ms-tag ms-tag-royal">Méthodologie</a>
+                    </div>
+                 </div>
+                 <div class="col-lg-6 col-md-8">
+                 <a href="assets/gen/fr/procomcompose.pdf" class="btn btn-primary btn-sm btn-block animate-icon">PDF<i class="ml-1 no-mr zmdi zmdi-long-arrow-right"></i></a>
+             </div>
+          </div>
+       </div>
+        </article>
+     </div>
+     <!-- Fin article-->
+     	 	 	 <!--Début article-->
+              <div class="col-lg-4 col-md-6 masonry-item wow">
+                <article class="card card-info mb-4 wow">
+                   <figure class="ms-thumbnail ms-thumbnail-left">
+                      <img id="typegenretonalite" src="assets/gen/fr/typegenretonalite.png" alt="" class="img-fluid">
+                   </figure>
+                   <div class="card-body">
+                      <h2><a href="assets/gen/fr/typegenretonalite.pdf">Type, genre et tonalité</a></h2>
+                      <p>Fiche de révision sur les caractéristiques d'un texte : le genre, le type et la tonalité</p>
+                      <div class="row">
+                        <div class="col-lg-6 col-md-4"> 
+                            <div class="mt-05">
+                              <a href="#" class="ms-tag ms-tag-info">Fiche de révison</a>
                             </div>
-                          </fieldset>
-                        </div>
-                      </div>
-                    </form>
+                         </div>
+                         <div class="col-lg-6 col-md-8">
+                         <a href="assets/gen/fr/typegenretonalite.pdf" class="btn btn-primary btn-sm btn-block animate-icon">PDF<i class="ml-1 no-mr zmdi zmdi-long-arrow-right"></i></a>
+                     </div>
                   </div>
-                  <div class="col-md-4">
-                    <form class="form-horizontal">
-                      <h4>Trier par</h4>
-                      <select id="SortSelect" class="form-control selectpicker">
-                        <option value="random">Difficulté</option>
-                        <!--<option value="price:asc">Price ASC</option>
-                        <option value="price:desc">Price DESC</option>
-                        <option value="date:asc">Release ASC</option>
-                        <option value="date:desc">Release DESC</option>-->
-                      </select>
-                    </form>
-                    <button class="btn btn-danger btn-block no-mb mt-2" id="Reset"><i class="zmdi zmdi-delete"></i> Réinitialiser</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+               </div>
+                </article>
+             </div>
+             <!-- Fin article-->
+             	 	 	 	 	 	 	 	 	 <!--Début article-->
+ 	 	 	 <div class="col-lg-4 col-md-6 masonry-item wow">
+        <article class="card card-info mb-4 wow">
+           <figure class="ms-thumbnail ms-thumbnail-left">
+              <img id="figuresdestyle" src="assets/gen/fr/figuresdestyle.png" alt="" class="img-fluid">
+           </figure>
+           <div class="card-body">
+              <h2><a href="assets/gen/fr/figuresdestyle.pdf">Les figures de style</a></h2>
+              <p>Fiche de révision sur les figures de style et leur possibles interprétation</p>
+              <div class="row">
+                <div class="col-lg-6 col-md-4"> 
+                    <div class="mt-05">
+                      <a href="#" class="ms-tag ms-tag-info">Fiche de révison</a>
+                    </div>
+                 </div>
+                 <div class="col-lg-6 col-md-8">
+                 <a href="assets/gen/fr/figuresdestyle.pdf" class="btn btn-primary btn-sm btn-block animate-icon">PDF<i class="ml-1 no-mr zmdi zmdi-long-arrow-right"></i></a>
+             </div>
           </div>
-          <div class="col-md-12">
-            <div class="row" id="Container">
-              <div class="col-xl-3 col-lg-4 col-sm-6 mix general metodo" data-price="1" data-date="20160901">
-                <div class="card">
-                  <div class="card-body overflow-hidden text-center">
-                    <a href="assets/gen/fr/deroulement.pdf"><img src="assets/gen/fr/deroulement.png" alt="" class="img-fluid center-block"></a>
-                    <h4 class="text-normal text-center">Déroulement de l'épreuve du bac de Français</h4>
-                    <p>Courte explication sur l'épreuve de Français</p>
-                    <div class="mt-2">
-                      <span class="mr-2">
-                        <i class="zmdi zmdi-star color-success"></i>
-                        <i class="zmdi zmdi-star"></i>
-                        <i class="zmdi zmdi-star"></i>
-                        <i class="zmdi zmdi-star"></i>
-                        <i class="zmdi zmdi-star"></i>
-                      </span>
-                      <span class="ms-tag ms-tag-royal">Metodo</span>
-                    </div>
-                    <a href="assets/gen/fr/deroulement.pdf" class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-download"></i> Voir</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-lg-4 col-sm-6 mix general metodo" data-price="2" data-date="20160901">
-                <div class="card">
-                  <div class="card-body overflow-hidden text-center">
-                    <a href="assets/gen/fr/comcompose.pdf"><img src="assets/gen/fr/comcompose.png" alt="" class="img-fluid center-block"></a>
-                    <h4 class="text-normal text-center">Le commentaire composé</h4>
-                    <p>Fiche de méthodologie sur le commentaire composé et sa structure.</p>
-                    <div class="mt-2">
-                      <span class="mr-2">
-                        <i class="zmdi zmdi-star color-success"></i>
-                        <i class="zmdi zmdi-star color-success"></i>
-                        <i class="zmdi zmdi-star"></i>
-                        <i class="zmdi zmdi-star"></i>
-                        <i class="zmdi zmdi-star"></i>
-                      </span>
-                      <span class="ms-tag ms-tag-royal">Metodo</span>
-                    </div>
-                    <a href="assets/gen/fr/comcompose.pdf" class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-download"></i> Voir</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-lg-4 col-sm-6 mix general metodo" data-price="2" data-date="20160901">
-                <div class="card">
-                  <div class="card-body overflow-hidden text-center">
-                    <a href="assets/gen/fr/plancomcompose.pdf"><img src="assets/gen/fr/plancomcompose.png" alt="" class="img-fluid center-block"></a>
-                    <h4 class="text-normal text-center">Le plan du commentaire</h4>
-                    <p>Fiche de méthodologie sur l'élaboration du plan du commentaire composé.</p>
-                    <div class="mt-2">
-                      <span class="mr-2">
-                        <i class="zmdi zmdi-star color-success"></i>
-                        <i class="zmdi zmdi-star color-success"></i>
-                        <i class="zmdi zmdi-star"></i>
-                        <i class="zmdi zmdi-star"></i>
-                        <i class="zmdi zmdi-star"></i>
-                      </span>
-                      <span class="ms-tag ms-tag-royal">Metodo</span>
-                    </div>
-                    <a href="assets/gen/fr/plancomcompose.pdf" class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-download"></i> Voir</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-lg-4 col-sm-6 mix general metodo" data-price="2" data-date="20160901">
-                <div class="card">
-                  <div class="card-body overflow-hidden text-center">
-                    <a href="assets/gen/fr/procomcompose.pdf"><img src="assets/gen/fr/procomcompose.png" alt="" class="img-fluid center-block"></a>
-                    <h4 class="text-normal text-center">La problématique du commentaire</h4>
-                    <p>Fiche de méthodologie sur la construction de la problématique du commentaire composé.</p>
-                    <div class="mt-2">
-                      <span class="mr-2">
-                        <i class="zmdi zmdi-star color-success"></i>
-                        <i class="zmdi zmdi-star color-success"></i>
-                        <i class="zmdi zmdi-star"></i>
-                        <i class="zmdi zmdi-star"></i>
-                        <i class="zmdi zmdi-star"></i>
-                      </span>
-                      <span class="ms-tag ms-tag-royal">Metodo</span>
-                    </div>
-                    <a href="assets/gen/fr/procomcompose.pdf" class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-download"></i> Voir</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-lg-4 col-sm-6 mix general fiche" data-price="3" data-date="20160901">
-                <div class="card">
-                  <div class="card-body overflow-hidden text-center">
-                    <a href="assets/gen/fr/typegenretonalite.pdf"><img src="assets/gen/fr/typegenretonalite.png" alt="" class="img-fluid center-block"></a>
-                    <h4 class="text-normal text-center">Type, genre et tonalité</h4>
-                    <p>Fiche de révision sur les caractéristiques d'un texte : le genre, le type et la tonalité.</p>
-                    <div class="mt-2">
-                      <span class="mr-2">
-                        <i class="zmdi zmdi-star color-warning"></i>
-                        <i class="zmdi zmdi-star color-warning"></i>
-                        <i class="zmdi zmdi-star color-warning"></i>
-                        <i class="zmdi zmdi-star"></i>
-                        <i class="zmdi zmdi-star"></i>
-                      </span>
-                      <span class="ms-tag ms-tag-info">Fiche</span>
-                    </div>
-                    <a href="assets/gen/fr/typegenretonalite.pdf" class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-download"></i> Voir</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-lg-4 col-sm-6 mix general fiche" data-price="4" data-date="20160901">
-                <div class="card">
-                  <div class="card-body overflow-hidden text-center">
-                    <a href="assets/gen/fr/figuresdestyle.pdf"><img src="assets/gen/fr/figuresdestyle.png" alt="" class="img-fluid center-block"></a>
-                    <h4 class="text-normal text-center">Les figures de style</h4>
-                    <p>Fiche de révision sur les figures de style et leur possibles interprétation.</p>
-                    <div class="mt-2">
-                      <span class="mr-2">
-                        <i class="zmdi zmdi-star color-warning"></i>
-                        <i class="zmdi zmdi-star color-warning"></i>
-                        <i class="zmdi zmdi-star color-warning"></i>
-                        <i class="zmdi zmdi-star color-warning"></i>
-                        <i class="zmdi zmdi-star"></i>
-                      </span>
-                      <span class="ms-tag ms-tag-info">Fiche</span>
-                    </div>
-                    <a href="assets/gen/fr/figuresdestyle.pdf" class="btn btn-primary btn-sm btn-block btn-raised mt-2 no-mb"><i class="zmdi zmdi-download"></i> Voir</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+       </div>
+        </article>
+     </div>
+     <!-- Fin article-->
         </div>
       </div> <!-- container -->
         <!--- Début footer + menu mobile--->
@@ -382,9 +364,8 @@
             </div>
         </div>
     </div>    
-    <script src="assets/js/v2/plugins.min.js"></script>
-    <script src="assets/js/v2/app.min.js"></script>
-    <script src="assets/js/v2/configurator.min.js"></script>
-    <script src="assets/js/v2/ecommerce.js"></script>
+    <script src="assets/js/plugins.min.js"></script>
+    <script src="assets/js/app.min.js"></script>
+    <script src="assets/js/index.js"></script>
   </body>
 </html>
