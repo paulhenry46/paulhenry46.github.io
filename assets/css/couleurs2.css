@@ -156,3 +156,10 @@
  .color-gray {
   color:#a3a375
  }
+ /*Tag-quizlet*/
+ .ms-tag.ms-tag-quizlet {
+  background-color:#4255ff
+ }
+ .ms-tag.ms-tag-quizlet:hover {
+  background-color:#0a092d
+ }
