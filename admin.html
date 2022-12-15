@@ -22,6 +22,9 @@
 <label for="lien">2 versions (clair et noir)</label>
 <input type="radio" id="lien2" name="lien" value="G">Oui
 <input type="radio" id="lien1" name="lien" value="L" checked="checked">Non<br>
+<label for="quiz">Quizlet</label>
+<input type="radio" id="quiz1" name="quiz" value="oui">Oui
+<input type="radio" id="quiz2" name="quiz" value="non" checked="checked">Non<br>
 <label for="type">Type :</label>
 <input type="radio" id="fiche" name="type" value="G">Fiche de révision
 <input type="radio" id="carte" name="type" value="L" checked="checked">Carte mentale
@@ -42,6 +45,8 @@
 <div class="form-group label-floating has-success"><div class="input-group"> <span class="input-group-addon"><i class="zmdi zmdi-file"></i></span>
 <label class="control-label" for="titredesfichiers">Titre des fichiers (ne pas inclure vc/vn et l'extension devant être .pdf et .png)</label><input class="form-control" type="text" id="titredesfichiers" name="titredesfichiers"></div></div>
 <div class="form-group label-floating has-success"><div class="input-group"> <span class="input-group-addon"><i class="zmdi zmdi-info"></i></span>
+<label class="control-label" for="quizlien">Lien du Quizlet (facultatif)</label><input class="form-control" type="text" id="quizlien" size="30" name="quizlien"></div></div>
+<div class="form-group label-floating has-success"><div class="input-group"> <span class="input-group-addon"><i class="zmdi zmdi-info"></i></span>
 <label class="control-label" for="ide">ID pour ancrage</label><input class="form-control" type="text" id="ide" name="ide"></div></div>
 <div class="form-group label-floating has-success"><div class="input-group"> <span class="input-group-addon"><i class="zmdi zmdi-calendar"></i></span>
 <label class="control-label" for="date">Date</label><input class="form-control" type="text" id="date" name="date"></div></div><br><br>
@@ -49,8 +54,8 @@
 </form>
 <button onclick="sampleFunction()" class="btn btn-raised btn-success">Valider</button><br>
 Page nouveautés : <button id="bnouv" class="btn btn-raised btn-info">Copier</button> Page de la matière : <button id="bmat" class="btn btn-raised btn-info">Copier</button> <br>
-<textarea readonly id="pagenouv" name="pagenouv" rows="16" cols="50"></textarea>
-<textarea readonly id="pagemat" name="pagemat" rows="16" cols="50"></textarea><br>
+<textarea readonly id="pagenouv" name="pagenouv" rows="6" cols="50"></textarea>
+<textarea readonly id="pagemat" name="pagemat" rows="6" cols="50"></textarea><br>
 
 Contrôle des variables: <textarea id="sampleText"></textarea><br>
 <h2>2. Accès à Github</h2>
