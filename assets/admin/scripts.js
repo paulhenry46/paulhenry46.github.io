@@ -8,7 +8,6 @@ function sampleFunction() {
   var mat2 = " mb-4 wow\">\n \t \t \t \t \t <figure class=\"ms-thumbnail ms-thumbnail-left\">\n \t \t \t \t \t \t <img id=\""; 
   var mat21 = "\" src=\"assets/";
   var mat3 = ".png\" alt=\"\" class=\"img-fluid\">\n \t \t \t \t \t </figure>\n \t \t \t \t \t <div class=\"card-body\">\n \t \t \t \t \t \t <h2><a href=\"assets/";
-  var mat4 = ".pdf\">";
   var mat5 = " : ";
   var mat6 = "</a></h2>\n \t \t \t \t \t \t <p>";
   var mat7 = "</p>\n \t \t \t \t \t \t <div class=\"row\">\n \t \t \t \t \t \t \t<div class=\"col-lg-6 col-md-4\"> \n \t \t \t \t \t \t \t \t <div class=\"mt-05\">\n \t \t \t \t \t \t \t \t \t<a href=\"#\" class=\"ms-tag ms-tag-";
@@ -19,7 +18,6 @@ function sampleFunction() {
   var nouv2 = " mb-4 \">\n \t \t \t \t \t <figure class=\"ms-thumbnail ms-thumbnail-left\">\n \t \t \t \t \t \t <img id=\"";
   var nouv21 = "\" src=\"assets/";
   var nouv3 = ".png\" alt=\"\" class=\"img-fluid\">\n \t \t \t \t \t </figure>\n \t \t \t \t \t <div class=\"card-body\">\n \t \t \t \t \t \t <h2><a href=\"assets/";
-  var nouv4 = ".pdf\">";
   var nouv5 = " : ";
   var nouv6 = "</a></h2>\n \t \t \t \t \t \t <p>";
   var nouv7 = "</p>\n \t \t \t \t \t \t <div class=\"row\">\n \t \t \t \t \t \t \t<div class=\"col-lg-6 col-md-4\"> \n \t \t \t \t \t \t \t \t <div class=\"mt-05\">\n \t \t \t \t \t \t \t \t \t<a href=\"#\" class=\"ms-tag ms-tag-";
@@ -95,8 +93,12 @@ function sampleFunction() {
   }
   if(document.getElementById('lien1').checked == true){
     var lien = lienS1+repertoire1+repertoire2+titredesfichiers+lienS2
+    var mat4 = ".pdf\">";
+    var nouv4 = ".pdf\">";
   } else {
         var lien = lienD1+repertoire1+repertoire2+titredesfichiers+lienD2+repertoire1+repertoire2+titredesfichiers+lienD3
+        var mat4 = "vn.pdf\">";
+        var nouv4 = "vn.pdf\">";
   }
   var final = description+nom+titredesfichiers+Public+repertoire2+matiere+date+type;
   var finalmat = mat1+couleurmat+mat2+ide+mat21+repertoire1+repertoire2+titredesfichiers+mat3+repertoire1+repertoire2+titredesfichiers+mat4+nom+mat6+description+mat7+couleurmat+mat8+type+mat81+repertoire1+repertoire2+titredesfichiers+mat9
